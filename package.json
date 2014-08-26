@@ -1,0 +1,27 @@
+{
+  "name": "webpack-react-express",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react": "^0.11.0"
+  },
+  "devDependencies": {
+    "express": "~4.2.0",
+    "static-favicon": "~1.0.0",
+    "morgan": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "body-parser": "~1.0.0",
+    "debug": "~0.7.4",
+    "jade": "~1.3.0",
+    "statics": "~0.1.0",
+    "webpack": "^1.3.7",
+    "jsx-loader": "^0.11.0"
+  },
+  "main": "./index.js",
+  "scripts": {
+    "start": "webpack --progress --colors --watch -d",
+    "build": "webpack --progress --colors -p",
+    "server": "node bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
