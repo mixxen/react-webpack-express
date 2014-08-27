@@ -1,7 +1,7 @@
 react-webpack-express
 =====================
 
-Boilerplate to start developing npm react components with webpack.
+Boilerplate to start developing npm react components with webpack. Includes Facebook flux dispatcher.
 
 
 Usage
