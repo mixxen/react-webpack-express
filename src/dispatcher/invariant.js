@@ -21,7 +21,6 @@
  * The invariant message will be stripped in production, but the invariant
  * will remain to ensure logic does not differ in production.
  */
-var __DEV__=false;
 var invariant = function(condition, format, a, b, c, d, e, f) {
   if (__DEV__) {
     if (format === undefined) {
