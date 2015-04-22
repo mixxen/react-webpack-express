@@ -2,7 +2,7 @@
 var React         = require('react');
 var TestComponent = require('./components/TestComponent.jsx');
 
-React.renderComponent(
+React.render(
   <TestComponent/>,
   document.getElementById("react-container")
 );

@@ -10,7 +10,7 @@ var AnotherComponent = React.createClass({
 });
 
 
-React.renderComponent(
+React.render(
   <AnotherComponent/>,
   document.getElementById("react-container")
 );
