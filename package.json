@@ -1,6 +1,6 @@
 {
   "name": "webpack-react-express",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "flux": "^2.0.1",
