@@ -1,5 +1,6 @@
-/** @jsx React.DOM */
-var React         = require('react');
+var React    = require('react'),
+    ReactDOM = require('react-dom');
+
 
 var AnotherComponent = React.createClass({
   render: function() {
@@ -10,7 +11,7 @@ var AnotherComponent = React.createClass({
 });
 
 
-React.render(
+ReactDOM.render(
   <AnotherComponent/>,
   document.getElementById("react-container")
 );
