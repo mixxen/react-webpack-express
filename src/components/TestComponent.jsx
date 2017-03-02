@@ -1,24 +1,28 @@
-var React = require('react'),
-    Actions = require('../actions/Actions'),
-    Store = require('../stores/Store');
+import React from 'react';
 
-var TestComponent = React.createClass({
-  getInitialState: function() {
-    return Store.get();
-  },
-  componentDidMount: function() {
+import Actions from '../actions/Actions';
+import Store from '../stores/Store';
+
+class TestComponent extends React.Component {
+
+  constructor(props, context) {
+    super(props, context);
+    this.state = Store.get();
+    this.changeEventHandler = this.changeEventHandler.bind(this); //properties do not auto bind
+  }
+  componentDidMount() {
     Store.addListener('change', this.changeEventHandler);
-  },
-  changeEventHandler: function() {
+  }
+  changeEventHandler() {
     this.setState(Store.get());
-  },
-  handleChange: function(event) {
+  }
+  handleChange(event) {
     Actions.set(event.target.value);
-  },
-  handleButtonClick: function(event) {
+  }
+  handleButtonClick(event) {
     Actions.add(1);
-  },
-	render: function() {
+  }
+	render() {
     return (
     	<div>
     		Hello <input onChange={this.handleChange} defaultValue={this.state.value} type="text"/>
@@ -27,6 +31,6 @@ var TestComponent = React.createClass({
         <span>{this.state.count}: {this.state.value}</span>
      	</div>
   )}
-});
+}
 
-module.exports = TestComponent;
+export default TestComponent;

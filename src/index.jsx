@@ -1,6 +1,6 @@
-var React         = require('react'),
-    ReactDOM      = require('react-dom'),
-    TestComponent = require('./components/TestComponent.jsx');
+import React from 'react';
+import ReactDOM from 'react-dom';
+import TestComponent from './components/TestComponent.jsx';
 
 ReactDOM.render(
   <TestComponent/>,

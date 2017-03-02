@@ -1,13 +1,12 @@
 {
   "name": "webpack-react-express",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "dependencies": {
-    "flux": "^2.1.1",
+    "flux": "^3.1.2",
     "keymirror": "^0.1.1",
-    "object-assign": "^4.0.1",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7"
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.5.1",
